@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/icon.png" type="image/x-icon"> 
+    <script></script>
+</head>
+<body>
+    <header><h1 style="padding: 10px;">Easy Expression Converter</h1></header>
+    <div id="content">
+        <p style="text-align: center;padding-top: 10px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 125%;"><strong>Note: </strong>Enter the valid expression without any spaces in between the terms.</p>
+        <br>
+        <div id="inp">
+            <center>
+            <label for="from" style="font-size: 120%;">Enter Infix Expression: </label>
+            <input type="text" id="from" name="From" style="width: 50%;">
+            </center>
+        </div>
+        <center><button type="submit" onclick="convert()" id="btn">Convert</button></center>
+        <div id="output">
+            <p id="desc">
+                PostFix Expression : <span class="disp" id="postfix"></span>
+                <br><br>
+                PreFix Expression : <span class="disp" id="prefix"></span>
+            </p>
+        </div>
+        
+    </div>
+    
+    <footer >For any Queries: <a href="mailto:tyvn789@gmail.com" style="text-decoration: none;">Send email</a></footer>
+    <script src="conv.js"></script>
+    
+</body>
+</html>
